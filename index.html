@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swagatmaya Dhrugond – Business software, IoT and bots</title>
+<meta name="description" content="Swagatmaya Dhrugond builds management systems for schools, colleges and salons, IoT dashboards and bots. Try the live School ERP.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Swagatmaya Dhrugond – Business software, IoT and bots">
+<meta property="og:description" content="Management systems, IoT dashboards and bots for small businesses. Try the live School ERP.">
+<meta name="theme-color" content="#f3f6fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1320" media="(prefers-color-scheme: dark)">
+<style>
+:root{
+  --bg:#f3f6fa;--surface:#ffffff;--text:#0e1b2c;--muted:#4b5b70;--accent:#0b6e69;--on-accent:#ffffff;
+  --line:#d5dde8;--soft:#e4f1ef;--soft-text:#0b4f4b;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1320;--surface:#101c2d;--text:#e8eef6;--muted:#9fb0c4;--accent:#4fd1c5;--on-accent:#06201e;
+    --line:#22334b;--soft:#12302f;--soft-text:#9be7df;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1320;--surface:#101c2d;--text:#e8eef6;--muted:#9fb0c4;--accent:#4fd1c5;--on-accent:#06201e;
+  --line:#22334b;--soft:#12302f;--soft-text:#9be7df;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+[hidden]{display:none!important}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
+.brand{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none}
+nav{display:flex;gap:18px;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.2;margin:0}
+.hero{padding:56px 0 40px}
+h1{font-size:clamp(2rem,6.5vw,3.4rem);max-width:16em;letter-spacing:-.01em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:36em;margin:20px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.ghost{color:var(--accent);background:transparent}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:38em}
+.feature{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:28px 24px}
+.feature h3{font-size:1.5rem;margin-bottom:6px}
+.feature p{margin:10px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chip{background:var(--soft);color:var(--soft-text);padding:4px 12px;border-radius:999px;font-size:.88rem}
+.roles{margin:14px 0 0;padding-left:20px;color:var(--muted)}
+.roles li{margin:4px 0}
+.more{margin-top:34px}
+.more h3{font-size:1.15rem;margin-bottom:6px}
+.row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:16px 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row b{font-size:1.05rem}
+.row span{color:var(--muted)}
+.row em{font-style:normal;color:var(--soft-text);background:var(--soft);justify-self:start;padding:2px 10px;border-radius:999px;font-size:.82rem;margin-top:4px}
+@media (min-width:720px){.row{grid-template-columns:240px minmax(0,1fr) auto;gap:20px;align-items:baseline}.row em{margin-top:0}}
+.svc{display:grid;gap:22px}
+@media (min-width:720px){.svc{grid-template-columns:repeat(3,1fr)}}
+.svc h3{font-size:1.15rem;margin-bottom:6px}
+.svc p{margin:0;color:var(--muted)}
+.contact p{margin:6px 0}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Swagatmaya Dhrugond</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <h1>I build the software your business runs on.</h1>
+      <p class="lead">I’m Swagatmaya Dhrugond. I make management systems for schools, colleges and salons, dashboards for IoT hardware, and bots that take repeat work off your plate.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://smart-school-erp-rpl6.vercel.app" target="_blank" rel="noopener">Open the live School ERP</a>
+        <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com">Email me</a>
+        <a class="btn ghost" data-wa hidden target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="sub">One system is live and ready to try. The others are built too; full details are coming soon.</p>
+
+      <article class="feature">
+        <h3>Smart School ERP</h3>
+        <p>One system for the whole school office: admissions, students, fees, attendance, exams and parent updates. It works on a phone as well as a computer.</p>
+        <div class="chips">
+          <span class="chip">Admissions</span>
+          <span class="chip">Fee collection and receipts</span>
+          <span class="chip">Attendance</span>
+          <span class="chip">Marks and report cards</span>
+          <span class="chip">Result graphs and toppers</span>
+          <span class="chip">Bulk import from Excel</span>
+          <span class="chip">WhatsApp updates</span>
+          <span class="chip">Parent portal</span>
+        </div>
+        <p><strong>Who sees what:</strong></p>
+        <ul class="roles">
+          <li>Principal and admin: everything, including approvals and school-wide results.</li>
+          <li>Accountant: fees and admissions only.</li>
+          <li>Teacher: only their own classes.</li>
+          <li>Parent: only their own child, with a login by registered mobile number.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Next.js</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Vercel</span>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="https://smart-school-erp-rpl6.vercel.app" target="_blank" rel="noopener">Open live demo</a>
+          <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=School%20ERP%20demo%20login">Ask for a demo login</a>
+        </div>
+      </article>
+
+      <div class="more">
+        <h3>More projects</h3>
+        <div class="row"><b>Saloon project</b><span>Built for the salon business.</span><em>Details coming soon</em></div>
+        <div class="row"><b>College project</b><span>Built for colleges.</span><em>Details coming soon</em></div>
+        <div class="row"><b>Bot</b><span>A bot that does repeat work automatically.</span><em>Details coming soon</em></div>
+        <div class="row"><b>Transformer Health Monitoring</b><span>An IoT based system to watch the health of power transformers.</span><em>Details coming soon</em></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>What I can build for you</h2>
+      <p class="sub">Tell me how your work runs today. I’ll turn it into a simple system your staff can use from day one.</p>
+      <div class="svc">
+        <div><h3>Business management systems</h3><p>Records, fees or bookings, attendance, reports and logins for each kind of staff member.</p></div>
+        <div><h3>IoT monitoring dashboards</h3><p>Live readings from your sensors on a screen, so you can spot a problem before it becomes a breakdown.</p></div>
+        <div><h3>Bots and automation</h3><p>Replies, reminders and reports that run on their own, so nobody repeats the same task every day.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s talk about your project</h2>
+      <p class="sub">Send me a short message about what you need. I reply by email or WhatsApp.</p>
+      <p>Email: <a href="mailto:swagatjnv2011shiwalik@gmail.com">swagatjnv2011shiwalik@gmail.com</a></p>
+      <p data-phone-line hidden>Phone: <a data-phone></a></p>
+      <div class="btns" style="margin-top:18px">
+        <a class="btn primary" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=Project%20enquiry">Email me</a>
+        <a class="btn ghost" data-wa hidden target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Swagatmaya Dhrugond. Business software, IoT dashboards and bots.</div>
+</footer>
+
+<script>
+// Add the 10 digit mobile number here to show the WhatsApp and phone links.
+var PHONE = "9861331862";
+if (/^\d{10}$/.test(PHONE)) {
+  var msg = encodeURIComponent("Hi Swagatmaya, I saw your portfolio and want to talk about a project.");
+  document.querySelectorAll("[data-wa]").forEach(function (a) {
+    a.href = "https://wa.me/91" + PHONE + "?text=" + msg;
+    a.hidden = false;
+  });
+  document.querySelectorAll("[data-phone]").forEach(function (a) {
+    a.href = "tel:+91" + PHONE;
+    a.textContent = "+91 " + PHONE;
+    a.parentElement.hidden = false;
+  });
+}
+</script>
+</body>
+</html>
