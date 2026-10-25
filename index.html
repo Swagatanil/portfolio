@@ -102,7 +102,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 
     <section id="projects">
       <h2>Projects</h2>
-      <p class="sub">One system is live and ready to try. The others are built too; full details are coming soon.</p>
+      <p class="sub">Four of my projects have a live demo you can open. Details of my bot project are coming soon.</p>
 
       <article class="feature">
         <h3>Smart School ERP</h3>
@@ -135,12 +135,91 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
         </div>
       </article>
 
+      <article class="feature" style="margin-top:24px">
+        <h3>Salon booking and admin system <span class="chip" style="font-family:system-ui,sans-serif;font-weight:600;vertical-align:middle;margin-left:8px">Live, final features in progress</span></h3>
+        <p>A website for Naya Andaz Salon with a real backend behind it. Customers book online and leave feedback, and the owner runs everything from an admin panel without touching any code.</p>
+        <div class="chips">
+          <span class="chip">Online booking</span>
+          <span class="chip">Feedback with approval</span>
+          <span class="chip">Editable rate list</span>
+          <span class="chip">Admin panel</span>
+          <span class="chip">WhatsApp button</span>
+        </div>
+        <p><strong>How it behaves:</strong></p>
+        <ul class="roles">
+          <li>A customer picks a service, date and time. A slot that is full is refused, so there are no double bookings.</li>
+          <li>Spam control: one mobile number cannot make more than five bookings in a day, and past dates are rejected.</li>
+          <li>The owner confirms or cancels bookings, approves feedback before it appears on the site, and edits services and prices.</li>
+          <li>The admin side is locked with a secret token.</li>
+        </ul>
+        <p>It runs on Cloudflare’s free plan, so hosting costs nothing at this size.</p>
+        <div class="chips">
+          <span class="chip">Cloudflare Workers</span>
+          <span class="chip">D1 database</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="https://naya-andaz-salon.naya-andaz-salon.workers.dev/" target="_blank" rel="noopener">Open live site</a>
+          <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=Salon%20booking%20system">Ask about this project</a>
+        </div>
+      </article>
+
+      <article class="feature" style="margin-top:24px">
+        <h3>College website <span class="chip" style="font-family:system-ui,sans-serif;font-weight:600;vertical-align:middle;margin-left:8px">Sample project, not an official college site</span></h3>
+        <p>A website for a college with department pages, official notices, a photo gallery, an online admission form, a grievance form, student feedback and a class timetable that staff can edit from a password-protected admin area.</p>
+        <div class="chips">
+          <span class="chip">Department pages</span>
+          <span class="chip">Official notices</span>
+          <span class="chip">Photo gallery</span>
+          <span class="chip">Admission form</span>
+          <span class="chip">Grievance form</span>
+          <span class="chip">Feedback</span>
+          <span class="chip">Editable timetable</span>
+        </div>
+        <div class="chips">
+          <span class="chip">React (Vite)</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">ImgBB</span>
+          <span class="chip">Vercel</span>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="https://gp-nuapada-site.vercel.app" target="_blank" rel="noopener">Open live demo</a>
+          <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=College%20website">Ask about this project</a>
+        </div>
+      </article>
+
+      <article class="feature" style="margin-top:24px">
+        <h3>Transformer health monitoring <span class="chip" style="font-family:system-ui,sans-serif;font-weight:600;vertical-align:middle;margin-left:8px">In progress: software built, hardware next</span></h3>
+        <p>A monitoring system for power transformers. The software side is built and runs today on simulated data. Connecting real ESP32 sensors is the next step.</p>
+        <div class="chips">
+          <span class="chip">Health score</span>
+          <span class="chip">Fault classification</span>
+          <span class="chip">Anomaly detection (machine learning)</span>
+          <span class="chip">Telegram alerts</span>
+          <span class="chip">PDF maintenance reports</span>
+          <span class="chip">Reading log</span>
+        </div>
+        <p>It reads the data, calculates a health score, classifies the fault, flags unusual patterns with an Isolation Forest model, can send alerts on Telegram, logs every reading and creates a PDF maintenance report. When the hardware is ready, only one function in the code needs to change.</p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">Telegram Bot API</span>
+          <span class="chip">Render</span>
+        </div>
+        <p style="color:var(--muted)">Planned next: ESP32 sensors and Firebase.</p>
+        <div class="btns">
+          <a class="btn primary" href="https://transformer-monitoring-mkow.onrender.com" target="_blank" rel="noopener">Open live demo (simulated data)</a>
+          <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=Transformer%20monitoring">Ask about this project</a>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem">The demo can take up to a minute to wake up on the first visit.</p>
+      </article>
+
       <div class="more">
         <h3>More projects</h3>
-        <div class="row"><b>Saloon project</b><span>Built for the salon business.</span><em>Details coming soon</em></div>
-        <div class="row"><b>College project</b><span>Built for colleges.</span><em>Details coming soon</em></div>
+        
+        
         <div class="row"><b>Bot</b><span>A bot that does repeat work automatically.</span><em>Details coming soon</em></div>
-        <div class="row"><b>Transformer Health Monitoring</b><span>An IoT based system to watch the health of power transformers.</span><em>Details coming soon</em></div>
+        
       </div>
     </section>
 
