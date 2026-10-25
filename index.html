@@ -102,7 +102,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 
     <section id="projects">
       <h2>Projects</h2>
-      <p class="sub">Four of my projects have a live demo you can open. Details of my bot project are coming soon.</p>
+      <p class="sub">Five projects: four have a live demo you can open, and the fifth is a Telegram bot.</p>
 
       <article class="feature">
         <h3>Smart School ERP</h3>
@@ -137,7 +137,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 
       <article class="feature" style="margin-top:24px">
         <h3>Salon booking and admin system <span class="chip" style="font-family:system-ui,sans-serif;font-weight:600;vertical-align:middle;margin-left:8px">Live, final features in progress</span></h3>
-        <p>A website for Naya Andaz Salon with a real backend behind it. Customers book online and leave feedback, and the owner runs everything from an admin panel without touching any code.</p>
+        <p>A website built for a real salon, with a proper backend behind it. Customers book online and leave feedback, and the owner runs everything from an admin panel without touching any code.</p>
         <div class="chips">
           <span class="chip">Online booking</span>
           <span class="chip">Feedback with approval</span>
@@ -214,18 +214,34 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
         <p style="color:var(--muted);font-size:.9rem">The demo can take up to a minute to wake up on the first visit.</p>
       </article>
 
-      <div class="more">
-        <h3>More projects</h3>
-        
-        
-        <div class="row"><b>Bot</b><span>A bot that does repeat work automatically.</span><em>Details coming soon</em></div>
-        
-      </div>
+      <article class="feature" style="margin-top:24px">
+        <h3>NSE stock screener bot <span class="chip" style="font-family:system-ui,sans-serif;font-weight:600;vertical-align:middle;margin-left:8px">Educational tool, not investment advice</span></h3>
+        <p>A Telegram bot that scans the Indian stock market every evening and lists stocks whose price rose sharply on a low delivery percentage, a pattern often linked to intraday-driven moves. It saves a trader from checking more than 1,800 NSE stocks by hand.</p>
+        <div class="chips">
+          <span class="chip">Daily automatic screening</span>
+          <span class="chip">/top20 on demand</span>
+          <span class="chip">Pick stocks with buttons</span>
+          <span class="chip">Live updates every 15 minutes</span>
+          <span class="chip">Falls back to the last trading day</span>
+        </div>
+        <p>For the stocks you pick, it checks live prices every 15 minutes during market hours (9:15 AM to 3:30 PM IST, Monday to Friday) and sends the price and percentage change. Your selections are saved, so tracking continues after a restart.</p>
+        <p>NSE asks for a valid session before its data responds, so the bot handles that, and on weekends and holidays it steps back to the last trading day.</p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">python-telegram-bot</span>
+          <span class="chip">pandas</span>
+          <span class="chip">NSE market data</span>
+        </div>
+        <div class="btns">
+          <a class="btn ghost" href="mailto:swagatjnv2011shiwalik@gmail.com?subject=Stock%20screener%20bot">Ask about this project</a>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem">Right now it runs when I start it by hand, and it costs nothing to run. This is a data screening tool built for learning and automation, and it does not give buy or sell advice.</p>
+      </article>
     </section>
 
     <section id="services">
       <h2>What I can build for you</h2>
-      <p class="sub">Tell me how your work runs today. I’ll turn it into a simple system your staff can use from day one.</p>
+      <p class="sub">Tell me how your work runs today. I’ll turn it into a simple system your staff can use from day one. I build on free cloud tools, so a small business can start with little or no monthly cost, and I’ll say plainly when a paid plan becomes necessary.</p>
       <div class="svc">
         <div><h3>Business management systems</h3><p>Records, fees or bookings, attendance, reports and logins for each kind of staff member.</p></div>
         <div><h3>IoT monitoring dashboards</h3><p>Live readings from your sensors on a screen, so you can spot a problem before it becomes a breakdown.</p></div>
